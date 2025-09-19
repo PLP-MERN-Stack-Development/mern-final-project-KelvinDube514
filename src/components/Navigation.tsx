@@ -11,7 +11,7 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   const navItems = [
-    { path: '/', label: 'Dashboard', icon: Shield },
+    { path: '/dashboard', label: 'Dashboard', icon: Shield },
     { path: '/map', label: 'Safety Map', icon: Map },
     { path: '/report', label: 'Report Alert', icon: AlertTriangle },
     { path: '/profile', label: 'Profile', icon: User },
