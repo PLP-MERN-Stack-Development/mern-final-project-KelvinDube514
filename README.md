@@ -4,9 +4,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![PRs Welcome](https://cdn.leonardo.ai/users/b664e3c2-6d8d-438e-8609-99976bee2e2b/generations/0f46b844-db33-4a4e-be02-3fb0e1102d29/segments/3:4:1/Flux_Dev_Create_a_SecurePath_Revolutionizing_Neighborhood_Safe_2.jpg)](http://makeapullrequest.com)
 
-[Live Demo](https://community-safe-path.netlify.app) | [Documentation](./docs) | [API Docs](./docs/API.md) | [Contributing](./CONTRIBUTING.md)
+[Live Demo](https://graceful-capybara-5ba2c7.netlify.app/) | [Documentation](./docs) | [API Docs](./docs/API.md) | [Contributing](./CONTRIBUTING.md)
 
 ---
 
