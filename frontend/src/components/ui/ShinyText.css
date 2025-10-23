@@ -1,0 +1,86 @@
+/* ShinyText CSS Animation */
+.shiny-text {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 40%,
+    rgba(255, 255, 255, 0.6) 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  background-size: 300% 100%;
+  animation: shiny-text-animation linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: inherit;
+}
+
+.shiny-text.disabled {
+  animation: none;
+  background: none;
+}
+
+@keyframes shiny-text-animation {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Enhanced shiny effect for better visibility */
+.shiny-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: shiny-text-shine linear infinite;
+  pointer-events: none;
+}
+
+.shiny-text.disabled::before {
+  display: none;
+}
+
+@keyframes shiny-text-shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Additional shimmer effect */
+.shiny-text {
+  background: linear-gradient(
+    45deg,
+    currentColor 25%,
+    rgba(255, 255, 255, 0.3) 50%,
+    currentColor 75%
+  );
+  background-size: 400% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shimmer linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400% 0;
+  }
+  100% {
+    background-position: 400% 0;
+  }
+}

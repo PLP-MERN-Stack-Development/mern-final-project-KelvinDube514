@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "name": "securepath-backend",
+  "builds": [
+    {
+      "src": "src/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "src/server.js"
+    },
+    {
+      "src": "/health",
+      "dest": "src/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "src/server.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "MONGODB_URI": "@mongodb_uri",
+    "JWT_SECRET": "@jwt_secret",
+    "REFRESH_TOKEN_SECRET": "@refresh_token_secret",
+    "FRONTEND_URL": "@frontend_url",
+    "CORS_ORIGIN": "@cors_origin",
+    "SENTRY_DSN": "@sentry_dsn"
+  },
+  "regions": ["iad1"],
+  "functions": {
+    "src/server.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
+}
